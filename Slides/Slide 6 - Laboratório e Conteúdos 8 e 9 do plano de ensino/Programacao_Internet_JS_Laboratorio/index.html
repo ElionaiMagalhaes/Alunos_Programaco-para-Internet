@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laboratório | Inscrições em oficina</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <main class="container">
+    <header>
+      <p class="eyebrow">Programação para Internet • Laboratório</p>
+      <h1>Inscrições em oficina</h1>
+      <p>Pratique variáveis, funções, eventos, DOM, validação e requisições assíncronas.</p>
+    </header>
+    <section class="grid">
+      <article class="card">
+        <h2>Nova inscrição</h2>
+        <form id="form-inscricao">
+          <label for="nome">Nome</label>
+          <input id="nome" name="nome" required minlength="3" maxlength="60" autocomplete="name" placeholder="Nome do participante">
+          <label for="email">E-mail</label>
+          <input id="email" name="email" type="email" required autocomplete="email" placeholder="aluno@exemplo.com">
+          <label for="turma">Turma</label>
+          <select id="turma" name="turma" required>
+            <option value="">Selecione uma turma</option>
+            <option value="Manhã">Manhã</option>
+            <option value="Noite">Noite</option>
+          </select>
+          <button type="submit">Adicionar inscrição</button>
+        </form>
+        <p id="mensagem" class="status" role="status" aria-live="polite">Nenhuma inscrição cadastrada nesta sessão.</p>
+      </article>
+      <article class="card">
+        <h2>Inscrições da sessão</h2>
+        <ul id="lista-inscricoes" class="lista"></ul>
+        <p class="hint">Os registros são apenas demonstrativos e permanecem na memória desta página; não são enviados a um servidor.</p>
+        <hr>
+        <h2>Consulta assíncrona</h2>
+        <p>Consulte um arquivo JSON por meio de <code>fetch()</code>.</p>
+        <button id="consultar-curso" type="button" class="outline">Consultar oficina</button>
+        <p id="resultado-consulta" role="status" aria-live="polite">Aguardando consulta.</p>
+      </article>
+    </section>
+    <footer>Laboratório didático • Dados fictícios • Sem persistência</footer>
+  </main>
+</body>
+</html>

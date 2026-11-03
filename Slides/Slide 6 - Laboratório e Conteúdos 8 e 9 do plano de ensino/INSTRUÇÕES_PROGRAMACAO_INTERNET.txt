@@ -1,0 +1,13 @@
+PROGRAMAÇÃO PARA INTERNET — AULA E LABORATÓRIO
+Professor Msc Elionai Magalhães
+
+1. Abra o arquivo Aula_Programacao_Internet_JavaScript_DOM_Validacao_Fetch_Elionai.pptx no Microsoft PowerPoint.
+2. Extraia a pasta Programacao_Internet_JS_Laboratorio mantendo as subpastas.
+3. Para o laboratório, abra o terminal dentro da pasta extraída e execute:
+      python -m http.server 5500
+   No Windows, se python não funcionar: py -m http.server 5500
+4. Acesse http://localhost:5500 no navegador.
+5. Para os exercícios, consulte o arquivo README_LABORATORIO.md dentro da pasta de laboratório.
+
+IMPORTANTE: dados fictícios, sem gravação real e sem coleta de informações pessoais.
+O laboratório funciona localmente, sem depender de serviços externos.
